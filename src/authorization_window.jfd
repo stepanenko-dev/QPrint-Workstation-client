@@ -1,0 +1,93 @@
+JFDML JFormDesigner: "5.1.2.0.134" Java: "1.7.0_40" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.bundleName": "authorization_window_title"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"title": new FormMessage( null, "this.title" )
+			"$sizePolicy": 1
+			"resizable": false
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class javax.swing.BoxLayout ) {
+				"axis": 0
+			} ) {
+				name: "panel1"
+				add( new FormComponent( "com.jformdesigner.designer.wrapper.HSpacer" ) {
+					name: "hSpacer1"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+					"columns": 1
+					"rows": 7
+					"hgap": 10
+					"vgap": 10
+				} ) {
+					name: "login_pass_panel"
+					add( new FormComponent( "com.jformdesigner.designer.wrapper.VSpacer" ) {
+						name: "vSpacer2"
+						"minimumSize": new java.awt.Dimension( 20, 20 )
+						"preferredSize": new java.awt.Dimension( 20, 20 )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": new FormMessage( null, "login_label_text" )
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "loginField"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label2"
+						"text": new FormMessage( null, "pass_label_text" )
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "passField"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "enterButton"
+						"text": new FormMessage( null, "enter_key_button_text" )
+						"horizontalTextPosition": 0
+					} )
+					add( new FormComponent( "com.jformdesigner.designer.wrapper.VSpacer" ) {
+						name: "vSpacer3"
+						"minimumSize": new java.awt.Dimension( 12, 20 )
+						"preferredSize": new java.awt.Dimension( 10, 20 )
+					} )
+				} )
+				add( new FormComponent( "com.jformdesigner.designer.wrapper.HSpacer" ) {
+					name: "hSpacer2"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+				"columns": 4
+			} ) {
+				name: "panel2"
+				"border": new javax.swing.border.SoftBevelBorder( 0, null, null, null, null )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox1"
+					"text": new FormMessage( null, "internet_checker_label" )
+					"focusable": false
+					"enabled": false
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox2"
+					"text": "text"
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox3"
+					"text": "text"
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox4"
+					"text": "text"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Last"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 5, 0 )
+			"size": new java.awt.Dimension( 400, 405 )
+		} )
+	}
+}
